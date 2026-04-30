@@ -40,6 +40,10 @@ while (alt != 4)
                 System.Console.WriteLine("Saldo no suficiente para procesar su retiro.");
             }
         break;
+        case 4:
+        System.Console.WriteLine("Muchas Gracias Por Su Elección ");
+        System.Console.WriteLine("---------VUELVA PRONTO---------");
+        break;
     }
 }
 
