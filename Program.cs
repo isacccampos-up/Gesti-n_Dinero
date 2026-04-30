@@ -23,10 +23,23 @@ while (alt != 4)
         System.Console.WriteLine("Cuanto dinero desea depositar?: ");
         double deposito = double.Parse(Console.ReadLine()!);
         saldo = saldo + deposito ;
-        Console.WriteLine("Deposito hecho con éxito.");
-        Console.WriteLine("Ahora tu nuevo saldo es de :" + saldo);
+        System.Console.WriteLine("Deposito hecho con éxito.");
+        System.Console.WriteLine("Ahora tu nuevo saldo es de: $" + saldo);
         break;
-        
+        case 3:
+        System.Console.WriteLine("Cuanto dinero desea retirar?: ");
+        double retiro = double.Parse(Console.ReadLine()!);
+        if (retiro <= saldo )
+            {
+                saldo = saldo - retiro;
+                System.Console.WriteLine("Su retiro se realizó con exito.");
+                System.Console.WriteLine("Ahora tu nuevo saldo es de: $" + saldo);
+            }
+        else
+            {
+                System.Console.WriteLine("Saldo no suficiente para procesar su retiro.");
+            }
+        break;
     }
 }
 
